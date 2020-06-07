@@ -1,4 +1,4 @@
-name: Basic React Coding
+name: Basic React
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -38,4 +38,4 @@ jobs:
       
     # Deploy Surge
     - name: Deploy react app to surge
-      run: surge ./build react-basic.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build basic-react.surge.sh --token ${{ secrets.SURGE_TOKEN }}
